@@ -1,0 +1,26 @@
+{
+  "database":{
+    "dblang":"sqlite",
+    "db":"meter",
+    "dbfile":"./meter_db.sqlite"
+  },
+  "meterconsumptiontbl":{
+    "name":"meter_data",
+    "db":"meter",
+    "schema":"dbo",
+    "fields":{
+      "col1":"acctno text",
+      "col2":"custno text",
+      "col3":"mtrno text",
+      "col4":"mtrsz real",
+      "col5":"mtrusg integer",
+      "col6":"readdt text"
+    },
+    "primarykey":"",
+    "indexes":{
+      "idx1":"mtrno",
+      "idx2":"mtrsz",
+      "idx3":"readdt"
+    }
+  }
+}
